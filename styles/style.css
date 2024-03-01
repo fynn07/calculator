@@ -1,0 +1,73 @@
+*{
+    font-size: 20px;
+    font-family: "karla";
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+.copyright-container p{
+    margin: 0;
+    font-size: 0.8em;
+}
+.calculator-container{
+    border: 0px solid black;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(198, 198, 198);
+    padding: 13px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow:rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.textbox-container{
+    margin: 2vh;
+
+}
+.textbox-container *{
+    width: 14.5vw;
+    height: 4.5vh;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    border: 0px solid black;
+    border-radius: 10px;
+
+}
+.buttons-row{
+    margin: 1vh;
+    display: flex;
+    justify-content: space-around;
+    gap: 9px;
+
+}
+button{
+    border-radius: 50%;
+    width: 3.5vw;
+    height: 6vh;
+        
+}
+#button-0{
+    flex-grow: 1;
+    border-radius:20px;
+}
+
+.grey-button{
+    background-color: rgb(148, 148, 148);
+    color: black;
+    border: 1px solid rgb(148, 148, 148);
+}
+.yellow-button{
+    background-color: rgb(255, 159, 50);
+    color: white;
+    border: 1px solid rgb(255, 159, 50);
+}
+.dark-button{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    border: 1px solid rgb(62, 62, 62);
+}
