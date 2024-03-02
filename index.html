@@ -7,47 +7,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Karla:ital,wght@0,200..800;1,200..800&family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/scipt.js defer"></script>
+    <script src="scripts/scipt.js" defer></script>
     <title>Calculator</title>
 </head>
 <body>
     <div class="container">
         <div class="calculator-container">
             <div class="textbox-container">
-                <input type="text">
+            <p id="textbox">0</p>
             </div>
             <div class="buttons-container">
                 <div class="first-row-buttons buttons-row">
                     <button id="clear-button" class="grey-button">AC</button>
-                    <button id="negative-button" class="grey-button">+/-</button>
+                    <button id="negative-button" class="grey-button" onclick="turnValueToNegative()">+/-</button>
                     <button id="percentage-button" class="grey-button">%</button>
-                    <button id="division-button" class="yellow-button">÷</button>
+                    <button id="division-button" class="yellow-button operator-button" onclick="letDivisionOperator()">÷</button>
                 </div>
                 <div class="second-row-buttons buttons-row">
-                    <button id="seven-button" class="dark-button">7</button>
-                    <button id="eight-button" class="dark-button">8</button>
-                    <button id="nine-button" class="dark-button">9</button>
-                    <button id="multiply-button" class="yellow-button">X</button>
+                    <button id="seven-button" class="dark-button" onclick="addNumberToTextbox(7)">7</button>
+                    <button id="eight-button" class="dark-button" onclick="addNumberToTextbox(8)">8</button>
+                    <button id="nine-button" class="dark-button" onclick="addNumberToTextbox(9)">9</button>
+                    <button id="multiply-button" class="yellow-button operator-button" onclick="letMultiplicationOperator()">x</button>
                     
                 </div>
                 <div class="third-row-buttons buttons-row">
-                    <button id="four-button" class="dark-button">4</button>
-                    <button id="five-button" class="dark-button">5</button>
-                    <button id="six-button" class="dark-button">6</button>
-                    <button id="subtract-button" class="yellow-button">-</button>
+                    <button id="four-button" class="dark-button" onclick="addNumberToTextbox(4)">4</button>
+                    <button id="five-button" class="dark-button" onclick="addNumberToTextbox(5)">5</button>
+                    <button id="six-button" class="dark-button" onclick="addNumberToTextbox(6)">6</button>
+                    <button id="subtract-button" class="yellow-button operator-button" onclick="letSubtractionOperator()">-</button>
 
                 </div>
                 <div class="fourth-row-buttons buttons-row">
-                    <button id="one-button" class="dark-button">1</button>
-                    <button id="two-button" class="dark-button">2</button>
-                    <button id="three-button" class="dark-button">3</button>
-                    <button id="addition-button" class="yellow-button">+</button>
+                    <button id="one-button" class="dark-button" onclick="addNumberToTextbox(1)">1</button>
+                    <button id="two-button" class="dark-button" onclick="addNumberToTextbox(2)">2</button>
+                    <button id="three-button" class="dark-button" onclick="addNumberToTextbox(3)">3</button>
+                    <button id="addition-button" class="yellow-button operator-button" onclick="letAddOperator()">+</button>
 
                 </div>
                 <div class="fifth-row-buttons buttons-row">
-                    <button id="button-0" class="dark-button">0</button>
-                    <button id="button-dot" class="dark-button">.</button>
-                    <button id="button-equals" class="yellow-button">=</button>
+                    <button id="button-0" class="dark-button" onclick="addNumberToTextbox(0)">0</button>
+                    <button id="button-dot" class="dark-button" onclick="addNumberToTextbox('.')">.</button>
+                    <button id="button-equals" class="yellow-button" onclick="operator()">=</button>
                 </div>
 
             </div>
